@@ -22,7 +22,7 @@ const getUserMe = (req, res, next) => {
   User.findById(userId)
     .orFail()
     .then((user) => {
-      res.send({ data: user });
+      res.send(user);
     })
     .catch((err) => {
       if (err.name === 'DocumentNotFoundError') {
@@ -74,7 +74,7 @@ const createUser = (req, res, next) => {
         .then((newUser) => {
           const data = newUser.toObject();
           delete data.password;
-          res.status(CREATED_CODE).send(data);
+          res.status(CREATED_CODE).send({ data });
         })
         .catch((err) => {
           if (err.code === 11000) {
@@ -156,7 +156,7 @@ const login = (req, res, next) => {
 
           const token = jwt.sign({ _id: user._id }, 'SECRET_KEY', { expiresIn: '7d' }); // HARDCODE SECRET_KEY
           // eslint-disable-next-line consistent-return
-          return res.send({ JWT: token });
+          return res.send({ token });
         });
     })
     .catch((err) => {
