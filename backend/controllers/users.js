@@ -22,7 +22,7 @@ const getUserMe = (req, res, next) => {
   User.findById(userId)
     .orFail()
     .then((user) => {
-      res.send(user);
+      res.send({ data: user });
     })
     .catch((err) => {
       if (err.name === 'DocumentNotFoundError') {
