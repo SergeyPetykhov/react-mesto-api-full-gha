@@ -120,7 +120,7 @@ const updateUserAvatar = (req, res, next) => {
   User.findByIdAndUpdate(userId, { avatar }, { new: true, runValidators: true })
     .orFail()
     .then((user) => {
-      res.send({ data: user });
+      res.send(user);
     })
     .catch((err) => {
       if (err.name === 'DocumentNotFoundError') {
