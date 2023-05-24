@@ -13,10 +13,9 @@ const ALLOWED_CORS = [
   'https://mesto-psv.nomoredomains.monster',
   'http://api.mesto-psv.nomoredomains.monster',
   'https://api.mesto-psv.nomoredomains.monster',
-  'http://158.160.13.215',
-  'https://158.160.13.215',
+  'http://158.160.31.149',
+  'https://158.160.31.149',
   'http://localhost:3000',
-  'http://localhost:3001',
 ];
 
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
