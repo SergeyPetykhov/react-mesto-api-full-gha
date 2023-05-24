@@ -13,8 +13,8 @@ const ALLOWED_CORS = [
   'https://mesto-psv.nomoredomains.monster',
   'http://api.mesto-psv.nomoredomains.monster',
   'https://api.mesto-psv.nomoredomains.monster',
-  'http://158.160.31.149',
-  'https://158.160.31.149',
+  'http://158.160.24.5',
+  'https://158.160.24.5',
   'http://localhost:3000',
 ];
 
