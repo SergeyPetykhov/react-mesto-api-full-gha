@@ -5,7 +5,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.15.128
+IP-адрес: 158.160.15.128
 
 Frontend https://mesto-psv.nomoredomains.monster
 
