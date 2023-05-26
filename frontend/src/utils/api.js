@@ -124,7 +124,7 @@ class Api {
 /******************** class *******************/
 /* api */
 const api = new Api({
-  baseUrl: 'http://api.mesto-psv.nomoredomains.monster',
+  baseUrl: 'https://api.mesto-psv.nomoredomains.monster',
 });
 
 export default api;
