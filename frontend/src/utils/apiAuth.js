@@ -62,7 +62,7 @@ class ApiAuth {
 /******************** class *******************/
 /* apiAuth */
 const apiAuth = new ApiAuth({
-  baseUrl: 'https://api.mesto-psv.nomoredomains.monster',
+  baseUrl: '//api.mesto-psv.nomoredomains.monster',
   headers: {
     'Content-Type': 'application/json'
   }
